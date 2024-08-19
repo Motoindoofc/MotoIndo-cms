@@ -6,6 +6,12 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'date',
+      title: 'Date',
+      type: 'datetime',
+      validation: (Rule: Rule) => Rule.required(),
+    },
+    {
       name: 'value',
       title: 'Value',
       type: 'string',

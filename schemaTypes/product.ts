@@ -1,4 +1,4 @@
-import {Rule} from 'sanity'
+import { Rule } from 'sanity';
 
 export default {
   name: 'product',
@@ -32,10 +32,15 @@ export default {
     {
       name: 'image',
       title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true, // Enables cropping and hotspot selection
-      },
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true, // Enables cropping and hotspot selection
+          },
+        },
+      ],
     },
     {
       name: 'preview',
