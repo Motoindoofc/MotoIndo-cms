@@ -1,4 +1,4 @@
-import {Rule} from 'sanity'
+import {defineArrayMember, Rule} from 'sanity'
 
 export default {
   name: 'article',
@@ -71,7 +71,9 @@ export default {
             },
           ],
         },
-        {type: 'youtube'}, // Reference the YouTube object here
+        defineArrayMember({
+          type: 'youtube',
+        }),
       ],
     },
     {
