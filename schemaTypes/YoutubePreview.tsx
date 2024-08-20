@@ -5,7 +5,7 @@ import type {PreviewProps} from 'sanity'
 
 import {Flex, Text} from '@sanity/ui'
 
-export default function YouTubePreview(props: PreviewProps) {
+export default function youTubePreview(props: PreviewProps) {
   const {title: url} = props
 
   return (

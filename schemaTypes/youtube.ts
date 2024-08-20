@@ -2,8 +2,7 @@ import {defineField} from 'sanity'
 
 import {PlayIcon} from '@sanity/icons'
 
-// @ts-ignore
-import YouTubePreview from './YouTubePreview'
+import youTubePreview from './YoutubePreview'
 
 export default {
   name: 'youtube',
@@ -21,6 +20,6 @@ export default {
     select: {title: 'url'},
   },
   components: {
-    preview: YouTubePreview,
+    preview: youTubePreview,
   },
 }
