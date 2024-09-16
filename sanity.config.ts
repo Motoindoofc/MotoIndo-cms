@@ -9,8 +9,8 @@ export default defineConfig({
   name: 'default',
   title: 'Motoindo',
 
-  projectId: 'a73vobyr',
-  dataset: 'develop',
+  projectId: 'ob7ot1m1',
+  dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
 
